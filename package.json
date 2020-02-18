@@ -1,0 +1,49 @@
+{
+  "name": "botgen",
+  "displayName": "BotGen",
+  "version": "1.0.1",
+  "description": "CLI to generate bots for Discord, Telegram and Twitter",
+  "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
+  "license": "MIT",
+  "bin": "bin/botgen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xxgicoxx/botgen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xxgicoxx/botgen/issues"
+  },
+  "homepage": "https://github.com/xxgicoxx/botgen#readme",
+  "keywords": [
+    "botgen",
+    "bot",
+    "generate",
+    "cli",
+    "Discord",
+    "Telegram",
+    "Twitter"
+  ],
+  "dependencies": {
+    "arg": "^4.1.0",
+    "chalk": "^2.4.2",
+    "covgen": "^3.1.0",
+    "esm": "^3.2.18",
+    "execa": "^1.0.0",
+    "gitignore": "^0.6.0",
+    "inquirer": "^6.2.2",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^0.2.0",
+    "spdx-license-list": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/"
+  ]
+}

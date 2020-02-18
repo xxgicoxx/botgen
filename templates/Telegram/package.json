@@ -1,0 +1,33 @@
+{
+  "name": "telegram-bot",
+  "displayName": "Telegram Bot",
+  "version": "1.0.0",
+  "description": "BotGen Telegram",
+  "author": "BotGen CLI <botgen@outlook.com.br>",
+  "license": "MIT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/xxgicoxx/botgen",
+  "keywords": [
+    "telegram",
+    "bot"
+  ],
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegram-node-bot": "^4.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "twitter-bot",
+  "displayName": "Twitter Bot",
+  "version": "1.0.0",
+  "description": "BotGen Twitter",
+  "author": "BotGen CLI <botgen@outlook.com.br>",
+  "license": "MIT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/xxgicoxx/botgen",
+  "keywords": [
+    "twitter",
+    "bot"
+  ],
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  }
+}

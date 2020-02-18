@@ -1,0 +1,33 @@
+{
+  "name": "discord-bot",
+  "displayName": "Discord Bot",
+  "version": "1.0.0",
+  "description": "BotGen Discord",
+  "author": "BotGen CLI <botgen@outlook.com.br>",
+  "license": "MIT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "homepage": "https://github.com/xxgicoxx/botgen",
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  }
+}
