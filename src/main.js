@@ -58,14 +58,11 @@ async function setInfos(options) {
   const file = fs.readFileSync(path.join(options.targetDirectory, 'package.json'));
   const packageFile = JSON.parse(file);
 
-  console.log(options);
   packageFile.repository.url = options.repository;
   packageFile.bugs.url = options.repository;
   packageFile.homepage = options.repository;
 
-  console.log(packageFile.name);
-
-  fs.writeFileSync(path.join(options.targetDirectory, 'package.json'), JSON.stringify(packageFile));
+  fs.writeFileSync(path.join(options.targetDirectory, 'package.json'), JSON.stringify(packageFile, null, 4));
 }
 
 async function createProject(options) {
@@ -110,7 +107,6 @@ async function createProject(options) {
       }, {
         title: 'Set package.json infos',
         task: () => setInfos(options),
-        // enabled: () => options.git && !options.skipPrompts,
       }, {
         title: 'Install dependencies',
         task: () => projectInstall({
