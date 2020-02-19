@@ -1,7 +1,7 @@
 {
   "name": "botgen",
   "displayName": "BotGen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI to generate bots for Discord, Telegram and Twitter",
   "author": "Giovani de Oliveira <giovanioliveira@outlook.com.br>",
   "license": "MIT",
