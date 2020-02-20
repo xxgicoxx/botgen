@@ -3,20 +3,17 @@
   "displayName": "Discord Bot",
   "version": "1.0.0",
   "description": "BotGen Discord",
-  "author": "BotGen CLI <botgen@outlook.com.br>",
+  "author": "BotGen <https://github.com/xxgicoxx/botgen>",
   "license": "MIT",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/"
+    "type": "git"
   },
-  "bugs": {
-    "url": "https://github.com/"
-  },
-  "homepage": "https://github.com/xxgicoxx/botgen",
+  "bugs": {},
+  "homepage": "",
   "keywords": [
     "discord",
     "bot"

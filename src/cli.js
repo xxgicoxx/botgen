@@ -32,7 +32,7 @@ function parseArgumentsIntoOptions(rawArgs) {
 async function promptForMissingOptions(options) {
   const defaultTemplate = 'Discord';
   const defaultName = 'BotGen';
-  const defaultEmail = 'github.com/xxgicoxx/botgen';
+  const defaultEmail = 'https://github.com/xxgicoxx/botgen';
   const defaultGit = true;
   const defaultRepository = '';
 
