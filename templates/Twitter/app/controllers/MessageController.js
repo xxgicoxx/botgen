@@ -3,8 +3,8 @@ const { MessageService } = require('../services');
 const messageService = new MessageService();
 
 class MessageController {
-  async response(twitter, $) {
-    messageService.response(twitter, $);
+  async message(twitter, $) {
+    messageService.message(twitter, $);
   }
 }
 

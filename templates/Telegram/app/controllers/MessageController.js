@@ -10,7 +10,7 @@ class MessageController extends TelegramBaseController {
   }
 
   async start($) {
-    messageService.help($);
+    messageService.start($);
   }
 
   async help($) {

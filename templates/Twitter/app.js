@@ -14,5 +14,5 @@ const stream = twitter.stream('statuses/filter', {
 });
 
 stream.on('tweet', async ($) => {
-  messageController.response(twitter, $);
+  messageController.message(twitter, $);
 });

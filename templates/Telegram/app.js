@@ -11,7 +11,7 @@ const bot = new Telegram(telegramConfig.token, {
     port: telegramConfig.webAdminPort,
     host: telegramConfig.webAdminHost,
   },
-  workers: 1,
+  workers: telegramConfig.workers,
 });
 
 bot.router

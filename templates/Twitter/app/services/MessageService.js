@@ -1,15 +1,16 @@
 const { Direct } = require('../models');
 
 class MessageService {
-  async response(twitter, $) {
+  async message(twitter, $) {
     try {
-      const text = 'Beep Bop, i\'m a bot';
+      const message = `Hello, ${$.user.name}`;
 
-      twitter.post('direct_messages/events/new', new Direct({ user: $.user.id_str, text }).toJson());
+      twitter.post('direct_messages/events/new', new Direct({
+        user: $.user.id_str,
+        text: message,
+      }).toJson());
     } catch (ex) {
       console.error(ex);
-
-      twitter.post('direct_messages/events/new', new Direct({ user: $.user.id_str, text: 'Error, try again later' }).toJson());
     }
   }
 }

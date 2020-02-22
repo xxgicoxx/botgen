@@ -6,20 +6,26 @@ class MessageService {
       $.sendMessage(message);
     } catch (ex) {
       console.error(ex);
+    }
+  }
 
-      $.sendMessage('Error, try again later');
+  async start($) {
+    try {
+      const message = `Hello, ${$.message.from.firstName}`;
+
+      $.sendMessage(message);
+    } catch (ex) {
+      console.error(ex);
     }
   }
 
   async help($) {
     try {
-      const message = 'Add message to help users';
+      const message = 'I can help you.\n\nYou can control me by sending these commands:\n\n/help - command list';
 
       $.sendMessage(message);
     } catch (ex) {
       console.error(ex);
-
-      $.sendMessage('Error, try again later');
     }
   }
 }
