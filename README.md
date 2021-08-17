@@ -1,4 +1,4 @@
-# BotGen
+# botgen
 CLI to generate bots for Discord, Telegram and Twitter.
 
 <p align="center">
