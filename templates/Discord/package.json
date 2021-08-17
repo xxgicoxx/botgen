@@ -5,9 +5,9 @@
   "description": "BotGen Discord",
   "author": "BotGen <https://github.com/xxgicoxx/botgen>",
   "license": "MIT",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git"
@@ -19,12 +19,12 @@
     "bot"
   ],
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "dotenv": "^8.2.0"
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.1"
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.0"
   }
 }

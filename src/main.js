@@ -45,7 +45,7 @@ async function initGit(options) {
 }
 
 async function addRepository(options) {
-  const result = await execa.shell(`git remote add origin ${options.repository}`);
+  const result = await execa(`git remote add origin ${options.repository}`);
 
   if (!result.failed) {
     return Promise.resolve(result);
@@ -83,7 +83,7 @@ async function createProject(options) {
 
   try {
     await access(templateDir, fs.constants.R_OK);
-  } catch (err) {
+  } catch (error) {
     console.error('%s Invalid template name', chalk.red.bold('ERROR'));
 
     process.exit(1);
