@@ -11,7 +11,7 @@ class BotController {
     const stream = this.bot.stream('statuses/filter', {
       track: 'twitter-bot',
     });
-    
+
     stream.on('tweet', async (tweet) => {
       tweetsService.message(this.bot, tweet);
     });

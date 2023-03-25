@@ -5,10 +5,10 @@ CLI to generate bots for Discord, Telegram and Twitter.
   <img src="assets/imgs/tool-box.png">
 </p>
 
-# Templates
-- [x] Discord
-- [x] Telegram
-- [x] Twitter
+# Features
+* Generate Discord bot
+* Generate Telegram bot
+* Generate Twitter bot
 
 # Prerequisites
 * [Node.js](https://nodejs.org/en/)

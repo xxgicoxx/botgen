@@ -2,7 +2,10 @@ class HelpService {
   async help(bot, chat) {
     try {
       let message = '<b>I can help you.\n\nYou can control me by sending these commands:</b>\n';
-      const commands = await this._commands();
+      const commands = [
+        { command: '/start', description: 'Start' },
+        { command: '/help', description: 'Help' },
+      ];
 
       commands.forEach((command) => {
         message += `${command.command} - ${command.description}\n`;
@@ -12,18 +15,6 @@ class HelpService {
     } catch (error) {
       console.error(error);
     }
-  }
-
-  async _commands() {
-    return [
-      {
-        command: '/start',
-        description: 'Start',
-      }, {
-        command: '/help',
-        description: 'Help',
-      },
-    ];
   }
 }
 
